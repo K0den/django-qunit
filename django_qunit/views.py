@@ -100,9 +100,9 @@ def walk_finders(path):
             if len(path_split) > 1 and path_split[0] != u'':
                 # this file indicates a sub directory
                 subdirectories.append(path_split[0])
-        else:
-            # this is a file in this directory
-            matchfiles.append((ffile_path, fso))
+            else:
+                # this is a file in this directory
+                matchfiles.append((ffile_path, fso))
 
     # Get rid of duplicates
     subdirectories = list(set(subdirectories))  # array of strings
